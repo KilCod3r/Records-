@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Processing</title>
+    <link rel="stylesheet" href="marks_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Marks Processing</h1>
+        <form id="marksForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" required>
+
+            <label for="courseTitle">Course Title:</label>
+            <input type="text" id="courseTitle" required>
+
+            <div class="units-container">
+                <div class="unit-entry">
+                    <input type="text" placeholder="Unit 1 Name" class="unit-name" required>
+                    <input type="number" placeholder="Mark" class="unit-mark" min="0" max="100" required>
+                </div>
+                <div class="unit-entry">
+                    <input type="text" placeholder="Unit 2 Name" class="unit-name" required>
+                    <input type="number" placeholder="Mark" class="unit-mark" min="0" max="100" required>
+                </div>
+                <div class="unit-entry">
+                    <input type="text" placeholder="Unit 3 Name" class="unit-name" required>
+                    <input type="number" placeholder="Mark" class="unit-mark" min="0" max="100" required>
+                </div>
+                <div class="unit-entry">
+                    <input type="text" placeholder="Unit 4 Name" class="unit-name" required>
+                    <input type="number" placeholder="Mark" class="unit-mark" min="0" max="100" required>
+                </div>
+            </div>
+
+            <button type="submit">Calculate Grade</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="marks_script.js"></script>
+</body>
+</html> 
